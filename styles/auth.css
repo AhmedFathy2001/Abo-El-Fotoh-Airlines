@@ -1,0 +1,24 @@
+.auth-form-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth-form {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  padding: 50px 70px 16px;
+  border-radius: 24px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.forgot-password{
+    font-size: 14px;
+}
