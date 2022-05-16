@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+.color-primary {
+  color: #605dec;
+}
+.color-secondary {
+  background: linear-gradient(
+    to right,
+    rgba(92, 214, 192, 1),
+    rgba(34, 195, 166, 1)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+a {
+  text-decoration: none;
+}
+.small {
+  font-size: 16px !important;
+}
+.link {
+  text-decoration: none;
+  font-weight: 400;
+}
+.link:hover {
+  color: #605dec !important;
+}
+.navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.navbar-brand {
+  color: #605dec !important;
+  font-weight: bold;
+}
+.nav-link,
+.link {
+  color: #7c8db0 !important;
+  transition: 0.2s color;
+}
+.nav-item {
+  padding: 5px 10px;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #605dec !important;
+}
+
+.sign-up {
+  background-color: #605dec;
+  border-radius: 4px;
+  color: white !important;
+}
+.sign-up:hover {
+  transition: 0.2s opacity;
+  background-color: #605dec;
+  color: white !important;
+  opacity: 0.9;
+}
+.btn-primary {
+  background-color: #605dec !important;
+  border-radius: 4px;
+}
+.btn-outline-primary {
+  color: #605dec !important;
+}
+.btn-outline-primary:hover {
+  color: #fff !important;
+}
+
+.btn-group {
+  border: 1px solid #605dec;
+  border-radius: 4px;
+}
+.desc {
+  color: #7c8db0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #605dec;
+}
+li {
+  list-style: none;
+}
+nav {
+  margin-bottom: 56px;
+}
+.card {
+  width: 400px;
+}
+.card p {
+  font-size: 16px;
+  margin-bottom: 0px;
+  border-color: #e9e8fc;
+}
+.card hr {
+  width: 95%;
+  margin: auto;
+}
+.total .col1 {
+  margin-right: 15px;
+}
+.font-weight-bold {
+  font-weight: 600 !important;
+}
+form {
+  max-width: 572px;
+}
+.test hr {
+  width: 33%;
+  margin: auto;
+}
+.col1 {
+  max-width: 572px;
+}
+.sign-up-buttons button {
+  width: 572px;
+  margin-bottom: 15px;
+}
+footer {
+  margin-top: 100px;
+}
+section p {
+  max-width: 572px;
+}
+section .sep span:first-child,
+section .sep span:last-child {
+  width: 48%;
+  background-color: #7c8db0;
+  height: 1px;
+}
+section .sep {
+  margin-bottom: 10px;
+}
+
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 10px;
+}
