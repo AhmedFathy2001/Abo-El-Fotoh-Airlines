@@ -1,5 +1,8 @@
+* {
+  box-sizing: border-box;
+}
 .auth-form-container {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,16 +16,16 @@
   margin-bottom: 20px;
 }
 
-.link{
-    text-decoration: none;
-    color: #605dec;
+.link {
+  text-decoration: none;
+  color: #605dec;
 }
-.link:hover{
-    text-decoration: underline;
+.link:hover {
+  text-decoration: underline;
 }
-.forgot-password{
-    font-size: 14px;
+.forgot-password {
+  font-size: 14px;
 }
-.btn-primary{
+.btn-primary {
   background-color: #605dec !important;
 }
