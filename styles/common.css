@@ -1,0 +1,25 @@
+.navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.navbar-brand {
+  color: #605dec !important;
+  font-weight: bold;
+}
+.nav-link,
+.link {
+  color: #7c8db0 !important;
+  transition: 0.2s color;
+}
+.nav-item {
+  padding: 5px 10px;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #605dec !important;
+}
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 10px;
+}
