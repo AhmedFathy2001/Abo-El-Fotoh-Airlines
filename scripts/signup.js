@@ -2,6 +2,10 @@ const signup = document.getElementById("signup");
 const username = document.getElementById("username");
 const password = document.getElementById("password");
 const confirmPassword = document.getElementById("confirmPassword");
+const email = document.getElementById("email");
+const address = document.getElementById("address");
+const country = document.getElementById("country");
+const phone = document.getElementById("phone");
 
 signup.addEventListener("click", (e) => {
   e.preventDefault();
@@ -9,7 +13,11 @@ signup.addEventListener("click", (e) => {
   if (
     username.value === "" ||
     password.value === "" ||
-    confirmPassword.value === ""
+    confirmPassword.value === "" ||
+    email.value === "" ||
+    address.value === "" ||
+    country.value === "" ||
+    phone.value === ""
   ) {
     alert("Please fill in all fields");
   } else if (password.value !== confirmPassword.value) {
@@ -23,13 +31,17 @@ signup.addEventListener("click", (e) => {
       body: JSON.stringify({
         name: username.value,
         password: password.value,
+        email: email.value,
+        address: address.value,
+        country: country.value,
+        phone: phone.value,
       }),
     })
       .then((res) => {
-        if (res.status === 200) {
+        if (res.status === 201) {
           window.location.href = "/auth.html";
         } else {
-          alert("Username already exists");
+          alert("error");
         }
       })
       .catch((err) => alert(err.message));
