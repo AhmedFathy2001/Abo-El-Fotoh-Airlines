@@ -1,13 +1,14 @@
 const login = document.getElementById("login");
 const username = document.getElementById("username");
 const password = document.getElementById("password");
-
+let token;
 login.addEventListener("click", (e) => {
   e.preventDefault();
 
   if (username.value === "" || password.value === "") {
     alert("Please fill in all fields");
   } else {
+    console.log(password.value);
     fetch("http://localhost:3000/users/login", {
       method: "POST",
       headers: {
@@ -19,6 +20,8 @@ login.addEventListener("click", (e) => {
       }),
     })
       .then((res) => {
+        token = res.body;
+        console.log(token);
         if (res.status === 200) {
           window.location.href = "/index.html";
         } else {
