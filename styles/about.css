@@ -1,0 +1,44 @@
+.content header {
+  min-height: calc(100vh - 66px);
+  background: rgba(96, 93, 236, 0.4) url("../images/about-hero.png");
+  background-blend-mode: multiply;
+  background-size: cover;
+  margin-top: 66px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header h1 {
+  color: #fff;
+  font-size: 72px;
+  font-weight: bold;
+  width: 75%;
+  line-height: 1.1;
+}
+section img {
+  max-width: 100%;
+}
+.about .row {
+  padding-top: 100px;
+}
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: transparent;
+  background-image: url(../images/hero-text-bg.png);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.about p {
+  font-size: 16px;
+  color: #4f5e71;
+  margin-bottom: 30px;
+}
+.about p:last-of-type {
+  margin-bottom: 0;
+}
+footer {
+  margin-top: 100px;
+}

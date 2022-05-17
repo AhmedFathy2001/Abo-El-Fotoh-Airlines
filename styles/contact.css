@@ -1,0 +1,64 @@
+.content header {
+  min-height: calc(100vh - 66px);
+  background-image: url(../images/hero-text-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 66px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header h1 {
+  color: #fff;
+  font-size: 72px;
+  font-weight: bold;
+  width: 75%;
+  line-height: 1.1;
+}
+header p {
+  color: #fff;
+  font-size: 20px;
+  max-width: 500px;
+  opacity: 0.7;
+}
+section img {
+  max-width: 100%;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: transparent;
+  background-image: url(../images/hero-text-bg.png);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.contact {
+  margin-top: 100px;
+}
+form .form-group {
+  margin-bottom: 20px;
+}
+form label {
+  margin-bottom: 10px;
+  color: #707070;
+}
+.contact-info .label {
+  font-size: 12px;
+  text-transform: uppercase;
+  display: block;
+  color: #b3b3b3;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+.contact-info a {
+  text-decoration: none;
+  font-size: 32px;
+  color: #605dec;
+}
+.contact h2 {
+  font-size: 56px;
+}
