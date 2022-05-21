@@ -73,21 +73,21 @@
                         <label class="form-check-label desc small" for="flexCheckDefault">Billing address is same as
                             Passenger 1</label>
                     </div>
-                    <form class="mb-5">
+                    <form class="mb-5" id="myForm" name="form-name" onsubmit="window.location.href = 'thanks.html'; return false;">
                         <div class="form-group mb-4 ">
                             <input type="text" class="form-control form-control-lg" id="formGroupExampleInput"
-                                placeholder="Name on card">
+                                placeholder="Name on card" required>
                         </div>
                         <div class="form-group mb-4">
                             <input type="text" class="form-control form-control-lg" id="formGroupExampleInput2"
-                                placeholder="Card number">
+                                placeholder="Card number" required>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <input type="text" class="form-control form-control-lg" placeholder="Expiration date">
+                                <input type="text" class="form-control form-control-lg" placeholder="Expiration date" required>
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control form-control-lg" placeholder="CCV">
+                                <input type="text" class="form-control form-control-lg" placeholder="CCV" required>
                             </div>
                         </div>
 
@@ -102,12 +102,12 @@
                     </div>
                     <form>
                         <div class="form-group mb-4 ">
-                            <input type="text" class="form-control form-control-lg" id="formGroupExampleInput"
-                                placeholder="Email address or phone number">
+                            <input type="email" class="form-control form-control-lg" id="formGroupExampleInput"
+                                placeholder="Email address or phone number" >
                         </div>
                         <div class="form-group mb-4">
-                            <input type="text" class="form-control form-control-lg" id="formGroupExampleInput2"
-                                placeholder="Password">
+                            <input type="password" class="form-control form-control-lg" id="formGroupExampleInput2"
+                                placeholder="Password" >
                         </div>
                     </form>
 
@@ -132,56 +132,8 @@
                         vary by airline. See the <span class="text-primary"> <a href="#">full cancellation policy</a>
                         </span> for this flight.</p>
                     <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-lg btn-outline-primary">Back to seat select</button>
-                        <button type="button" class="btn btn-lg btn-outline-secondary" disabled>Confirm and pay</button>
-                    </div>
-                </div>
-
-                <div class="col2">
-
-                    <div class="card mb-4">
-                        <div class=" d-flex justify-content-between p-3">
-                            <div class="col1"><img src="./images/Hawaii.svg" alt=""></div>
-                            <div class="col2">
-                                <p>Hawaiian Airlines</p>
-                                <p class="desc">FIG4312</p>
-                            </div>
-                            <div class="col3 text-center">
-                                <p>16h 45m (+1d)</p>
-                                <p>7:00 AM - 4:15 PM</p>
-                                <p class="desc">2h 45m in HNL</p>
-                            </div>
-                        </div>
-
-                        <hr class="my-2">
-
-                        <div class=" d-flex justify-content-between p-3">
-                            <div class="col1"><img src="./images/Hawaii.svg" alt=""></div>
-                            <div class="col2">
-                                <p>Hawaiian Airlines</p>
-                                <p class="desc">FIG4312</p>
-                            </div>
-                            <div class="col3 text-center">
-                                <p>16h 45m (+1d)</p>
-                                <p>7:00 AM - 4:15 PM</p>
-                                <p class="desc">2h 45m in HNL</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="total d-flex justify-content-end font-weight-bold">
-                        <div class="col1">
-                            <p>Seat upgrade</p>
-                            <p>Subtotal</p>
-                            <p>Taxes and Fees</p>
-                            <p>Total</p>
-                        </div>
-                        <div class="col2">
-                            <p>$199</p>
-                            <p>$702</p>
-                            <p>$66</p>
-                            <p>$768</p>
-                        </div>
+                        <button type="button" class="btn btn-lg btn-outline-primary" onclick="location.href='index.html';" >Back to seat select</button>
+                        <button type="submit" class="btn btn-lg btn-outline-primary" form="myForm">Confirm and pay</button>
                     </div>
                 </div>
             </div>
