@@ -76,6 +76,9 @@ a {
   border: 1px solid #605dec;
   border-radius: 4px;
 }
+.color-text{
+  color: #7c8db0;
+}
 .desc {
   color: #7c8db0;
   font-style: normal;
@@ -128,9 +131,6 @@ form {
   width: 572px;
   margin-bottom: 15px;
 }
-footer {
-  margin-top: 100px;
-}
 section p {
   max-width: 572px;
 }
@@ -145,6 +145,13 @@ section .sep {
 }
 
 footer {
+  margin-top: 50px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 20px 10px;
+}
+footer ul{
+  padding:0;
+}
+footer li{
+  margin-bottom: 10px;
 }
