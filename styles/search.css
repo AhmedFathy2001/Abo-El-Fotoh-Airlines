@@ -9,6 +9,10 @@ body {
 form {
   display: flex;
 }
+td {
+  padding: 10px;
+  border-left: #27273f solid 1px;
+}
 input {
   background-repeat: no-repeat;
   /* display: flex;
