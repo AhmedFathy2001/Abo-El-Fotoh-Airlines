@@ -2,7 +2,7 @@ const login = document.getElementById("login");
 const username = document.getElementById("username");
 const password = document.getElementById("password");
 let token;
-login.addEventListener("click", (e) => {
+login.addEventListener("click", async (e) => {
   e.preventDefault();
 
   if (username.value === "" || password.value === "") {
@@ -19,9 +19,12 @@ login.addEventListener("click", (e) => {
         password: password.value,
       }),
     })
-      .then((res) => {
-        token = res.body;
+      .then(async (res) => {
+        token = await res.json();
         console.log(token);
+        //save token to local storage
+
+        localStorage.setItem("token", token);
         if (res.status === 200) {
           window.location.href = "/index.html";
         } else {

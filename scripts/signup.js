@@ -1,4 +1,5 @@
 const signup = document.getElementById("signup");
+const SSN = document.getElementById("SSN");
 const username = document.getElementById("username");
 const password = document.getElementById("password");
 const confirmPassword = document.getElementById("confirmPassword");
@@ -23,12 +24,21 @@ signup.addEventListener("click", (e) => {
   } else if (password.value !== confirmPassword.value) {
     alert("Passwords do not match");
   } else {
+    console.log(
+      username.value,
+      password.value,
+      email.value,
+      address.value,
+      country.value,
+      phone.value
+    );
     fetch("http://localhost:3000/users/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
+        SSN: SSN.value,
         name: username.value,
         password: password.value,
         email: email.value,
