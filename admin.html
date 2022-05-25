@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin dashboard</title>
+  </head>
+  <body>
+    <!-- form to create Airline -->
+    <div class="container">
+      <h2>Create Airline</h2>
+      <form id="createAirline">
+        <div class="form-group mb-3">
+          <label>Airline ID</label>
+          <input
+            id="airlineId"
+            type="text"
+            class="form-control"
+            placeholder="Airline name"
+            name="Airline_id"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Airline name</label>
+          <input
+            id="airlineName"
+            type="text"
+            class="form-control"
+            placeholder="Airline name"
+            name="Airline_name"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Airline Email</label>
+          <input
+            id="airlineEmail"
+            type="text"
+            class="form-control"
+            placeholder="Airline Email"
+            name="Airline_email"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Airline phone</label>
+          <input
+            id="airlinePhone"
+            type="text"
+            class="form-control"
+            placeholder="Airline phone"
+            name="Airline_phone"
+          />
+        </div>
+        <div class="d-grid mt-3">
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!-- form to delete airline -->
+    <div class="container">
+      <h2>Delete Airline</h2>
+      <form id="deleteAirline">
+        <div class="form-group mb-3">
+          <label>Airline ID</label>
+          <input
+            id="airlineIdDelete"
+            type="text"
+            class="form-control"
+            placeholder="Airline name"
+            name="Airline_id"
+          />
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!-- form to update airline -->
+    <div class="container">
+      <h2>Update Airline</h2>
+      <form id="updateAirline">
+        <div class="form-group mb-3">
+          <label>Airline ID</label>
+          <input
+            id="updateAirlineId"
+            type="text"
+            class="form-control"
+            placeholder="Airline name"
+            name="Airline_id"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Airline name</label>
+          <input
+            id="updateAirlineName"
+            type="text"
+            class="form-control"
+            placeholder="Airline name"
+            name="Airline_name"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Airline Email</label>
+          <input
+            id="updateAirlineEmail"
+            type="text"
+            class="form-control"
+            placeholder="Airline Email"
+            name="Airline_email"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Airline phone</label>
+          <input
+            id="updateAirlinePhone"
+            type="text"
+            class="form-control"
+            placeholder="Airline phone"
+            name="Airline_phone"
+          />
+        </div>
+        <div class="d-grid mt-3">
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!-- button to get airline by id and getall -->
+    <div class="container">
+      <h2>Get Airline by ID</h2>
+      <form id="getAirlineById">
+        <div class="form-group mb-3">
+          <label>Airline ID</label>
+          <input
+            id="airlineIdGet"
+            type="text"
+            class="form-control"
+            placeholder="Airline name"
+            name="Airline_id"
+          />
+          <button id="getAllAirlines" type="" class="btn btn-danger"
+            >getAll</button
+          >
+          <button type="submit" class="btn btn-danger">getOne</button>
+        </div>
+      </form>
+    </div>
+    <!-- form to create trip -->
+    <div class="container">
+      <h2>Create Trip</h2>
+      <form id="createTrip">
+        <div class="form-group mb-3">
+          <label>Trip ID</label>
+          <input
+            id="TripId"
+            type="text"
+            class="form-control"
+            placeholder="Trip name"
+            name="Trip_id"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Airline id</label>
+          <input
+            id="TripAirline_id"
+            type="text"
+            class="form-control"
+            placeholder="Airline_id"
+            name="Airline_id"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Departure_date</label>
+          <input
+            id="Departure_date"
+            type="text"
+            class="form-control"
+            placeholder="Departure_date"
+            name="Departure_date"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Departure_time</label>
+          <input
+            id="Departure_time"
+            type="text"
+            class="form-control"
+            placeholder="Departure_time"
+            name="Departure_time"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Arrival_date</label>
+          <input
+            id="Arrival_date"
+            type="text"
+            class="form-control"
+            placeholder="Arrival_date"
+            name="Arrival_date"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Arrival_time</label>
+          <input
+            id="Arrival_time"
+            type="text"
+            class="form-control"
+            placeholder="Arrival_time"
+            name="Arrival_time"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>From</label>
+          <input
+            id="Source"
+            type="text"
+            class="form-control"
+            placeholder="From"
+            name="From"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>to</label>
+          <input
+            id="Destination"
+            type="text"
+            class="form-control"
+            placeholder="to"
+            name="to"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Arrival_aiport</label>
+          <input
+            id="Arrival_aiport"
+            type="text"
+            class="form-control"
+            placeholder="Arrival_aiport"
+            name="Arrival_aiport"
+          />
+        </div>
+        
+          <div class="form-group mb-3">
+          <label>Departure_airport</label>
+          <input
+            id="Departure_airport"
+            type="text"
+            class="form-control"
+            placeholder="Departure_airport"
+            name="Departure_airport"
+          />
+          </div>
+          <div class="form-group mb-3">
+          <label>price</label>
+          <input
+            id="price"
+            type="text"
+            class="form-control"
+            placeholder="price"
+            name="price"
+          />
+          </div>
+        </div>
+        <div class="d-grid mt-3">
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!-- form to delete Trip -->
+    <div class="container">
+      <h2>Delete Trip</h2>
+      <form id="deleteTrip">
+        <div class="form-group mb-3">
+          <label>Trip ID</label>
+          <input
+            id="TripIdDelete"
+            type="text"
+            class="form-control"
+            placeholder="Trip name"
+            name="Trip_id"
+          />
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!-- form to update Trip -->
+    <div class="container">
+      <h2>Update Trip</h2>
+      <form id="updateTrip">
+        <div class="form-group mb-3">
+          <label>Trip ID</label>
+          <input
+            id="TripId"
+            type="text"
+            class="form-control"
+            placeholder="Trip name"
+            name="Trip_id"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Airline id</label>
+          <input
+            id="TripAirline_id"
+            type="text"
+            class="form-control"
+            placeholder="Airline_id"
+            name="Airline_id"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Departure_date</label>
+          <input
+            id="Departure_date"
+            type="text"
+            class="form-control"
+            placeholder="Departure_date"
+            name="Departure_date"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Departure_time</label>
+          <input
+            id="Departure_time"
+            type="text"
+            class="form-control"
+            placeholder="Departure_time"
+            name="Departure_time"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Arrival_date</label>
+          <input
+            id="Arrival_date"
+            type="text"
+            class="form-control"
+            placeholder="Arrival_date"
+            name="Arrival_date"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Arrival_time</label>
+          <input
+            id="Arrival_time"
+            type="text"
+            class="form-control"
+            placeholder="Arrival_time"
+            name="Arrival_time"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>From</label>
+          <input
+            id="Source"
+            type="text"
+            class="form-control"
+            placeholder="From"
+            name="From"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>to</label>
+          <input
+            id="Destination"
+            type="text"
+            class="form-control"
+            placeholder="to"
+            name="to"
+          />
+        </div>
+        <div class="form-group mb-3">
+          <label>Arrival_aiport</label>
+          <input
+            id="Arrival_aiport"
+            type="text"
+            class="form-control"
+            placeholder="Arrival_aiport"
+            name="Arrival_aiport"
+          />
+        </div>
+        
+          <div class="form-group mb-3">
+          <label>Departure_airport</label>
+          <input
+            id="Departure_airport"
+            type="text"
+            class="form-control"
+            placeholder="Departure_airport"
+            name="Departure_airport"
+          />
+          </div>
+          <div class="form-group mb-3">
+          <label>price</label>
+          <input
+            id="price"
+            type="text"
+            class="form-control"
+            placeholder="price"
+            name="price"
+          />
+          </div>
+        </div>
+        <div class="d-grid mt-3">
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!-- button to get Trip by id and getall -->
+    <div class="container">
+      <h2>Get Trip by ID</h2>
+      <form id="getTripById">
+        <div class="form-group mb-3">
+          <label>Trip ID</label>
+          <input
+            id="TripIdGet"
+            type="text"
+            class="form-control"
+            placeholder="Trip name"
+            name="Trip_id"
+          />
+          <button id="getAllTrips" type="" class="btn btn-danger"
+            >getAll</button
+          >
+          <button type="submit" class="btn btn-danger">getOne</button>
+        </div>
+      </form>
+    </div>
+    <script src="./scripts/dashboard.js"></script>
+  </body>
+</html>
